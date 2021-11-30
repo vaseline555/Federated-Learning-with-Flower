@@ -1,6 +1,0 @@
-flwr>=0.17
-torch>=1.10
-torchvision>=0.9
-PyTDC>=0.3
-rdkit-pypi>=2021.9.2.1
-scikit-learn>=1.0.1
