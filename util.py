@@ -113,7 +113,7 @@ def test(net, testloader, device, flag):
             else:
                 _, predicted = torch.max(outputs.data, 1) 
                 correct += (predicted == labels).sum().item()
-                accuracy = correct / total
+                metric = correct / total
         else:
             if flag:
                 y_true, y_pred = torch.cat(y_true, 0).numpy(), torch.cat(y_pred, 0).numpy()
